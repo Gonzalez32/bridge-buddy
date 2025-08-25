@@ -1,0 +1,212 @@
+/* Footer Styles */
+.footer {
+  margin-top: auto;
+  padding: 3rem 0 1rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-brand h3 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer-brand p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  color: white;
+  text-decoration: none;
+}
+
+.social-link i {
+  font-size: 1.2rem;
+}
+
+.footer h4 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-links a:hover {
+  color: white !important;
+  text-decoration: none;
+}
+
+.footer-links i {
+  width: 16px;
+  text-align: center;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-legal {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-legal a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+  color: white !important;
+  text-decoration: none;
+}
+
+.separator {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 0 1rem 0;
+  }
+  
+  .footer .columns {
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer .column {
+    margin-bottom: 2rem;
+  }
+  
+  .footer-legal {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+  
+  /* Stack columns on mobile for better readability */
+  .footer .columns .column {
+    text-align: center;
+  }
+  
+  /* Improve footer links on mobile */
+  .footer-links a {
+    padding: 0.5rem 0;
+    display: block;
+  }
+  
+  /* Better spacing for footer sections */
+  .footer-brand,
+  .footer h4 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.5rem 0 1rem 0;
+  }
+  
+  .footer .column {
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-legal {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .separator {
+    display: none;
+  }
+  
+  .footer-bottom .columns {
+    text-align: center;
+  }
+  
+  /* Improve social links on very small screens */
+  .social-links {
+    gap: 0.75rem;
+  }
+  
+  .social-link {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .social-link i {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-legal {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .separator {
+    display: none;
+  }
+  
+  .footer-bottom .columns {
+    text-align: center;
+  }
+}
+
+/* Ensure footer stays at bottom */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
